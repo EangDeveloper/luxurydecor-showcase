@@ -1,0 +1,19 @@
+:root{
+    --primary-background: #091A23;
+    --secondary-background: #0D1117;
+    --primary-gold: #AD8C53;
+    --highlight-gold: #C8A86B;
+    --text-white: #F5F2EA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-header{
+    width: 100%;
+    height: 20px;
+    background: var(--primary-background);
+}
