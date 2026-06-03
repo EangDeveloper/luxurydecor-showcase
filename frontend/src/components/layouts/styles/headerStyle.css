@@ -14,6 +14,80 @@
 
 .top-header{
     width: 100%;
-    height: 20px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
     background: var(--primary-background);
+}
+.location{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.location a{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: var(--text-white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gold-icon{
+    color: var(--highlight-gold);
+}
+
+.paragraph{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.paragraph p{
+    color: var(--highlight-gold);
+}
+
+.social-media{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    display: flex;
+}
+
+.number-phone a{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: var(--text-white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gold-phone{
+    color: var(--primary-gold);
+}
+
+
+.social-media .facebook{
+    font-size: 20px;
+    margin-left: 20px;
+    color: var(--text-white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social-media .telegram{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: var(--text-white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gold-social{
+    color: var(--primary-gold);
 }
