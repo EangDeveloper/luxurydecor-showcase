@@ -1,8 +1,10 @@
 :root{
     --primary-background: #091A23;
     --secondary-background: #0D1117;
-    --primary-gold: #AD8C53;
-    --highlight-gold: #C8A86B;
+    --primary-gold: #C9A15A;
+    --highlight-gold: #D8B87A;
+    --gold-light: #FFE8A3;
+    --opacity-gold: 200, 168, 107;
     --text-white: #F5F2EA;
 }
 
@@ -10,4 +12,172 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.footer-section{
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: var(--primary-background);
+}
+
+.main-footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.main-footer .logo{
+    width: auto;
+}
+
+.main-footer img{
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.main-footer p{
+    padding: 5px;
+    font-size: 16px;
+    text-align: left;
+    color: var(--text-white);
+}
+
+.main-info{
+    border-top: 1px solid;
+    margin-top: 20px;
+    padding: 20px;
+    border-color: var(--primary-gold);
+}
+
+.main-footer .info-location,
+.main-footer .info-number,
+.main-footer .info-email,
+.main-footer .info-hour{
+    width: auto;
+    padding: 5px;
+    text-align: left;
+}
+.main-footer .info-location a,
+.main-footer .info-number a,
+.main-footer .info-email a,
+.main-footer .info-hour a{
+    width: auto;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+.main-explore h3,
+.main-collections h3,
+.main-customer h3,
+.main-inspired h3{
+    text-transform: uppercase;
+    padding-top: 25px;
+    color: var(--highlight-gold);
+}
+
+.main-explore ul,
+.main-collections ul,
+.main-customer ul{
+    font-size: 18px;
+    padding-top: 30px;
+    list-style: none;
+    color: var(--text-white);
+}
+
+.main-inspired p{
+    font-size: 18px;
+    padding-top: 40px;
+    list-style: none;
+    color: var(--text-white);
+}
+
+.main-explore ul li,
+.main-collections ul li,
+.main-customer ul li{
+    font-size: 18px;
+    padding-top: 20px;
+    list-style: none;
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+.main-inspired a{
+    padding: 5px;
+}
+
+.face,
+.tele{
+    font-size: 30px;
+    padding-top: 20px;
+    color: var(--highlight-gold);
+}
+
+.cerficate{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--highlight-gold);
+    padding: 20px;
+    background-color: rgba(var(--opacity-gold), 0.1);
+}
+
+.premium,
+.solution,
+.delivery,
+.warranty{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+
+.premium-detail h4,
+.solution-detail h4,
+.delivery-detail h4,
+.warranty-detail h4{
+    color: var(--highlight-gold);
+    font-size: 24px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.premium-detail p,
+.solution-detail p,
+.delivery-detail p,
+.warranty-detail p{
+    color: var(--text-white);
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.gold-cer-icon{
+    font-size: 50px;
+    color: var(--primary-gold);
+}
+
+.copyright{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.copyright .credit-card,
+.copyright .copy{
+    color: var(--text-white);
+    font-size: 14px;
+}
+
+.copyright .logo-foot img{
+    width: 200;
+    height: 200px;
+}
+
+.copyright .card img{
+    width: 100px;
+    height: 100px;
 }
