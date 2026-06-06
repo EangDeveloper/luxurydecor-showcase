@@ -1,0 +1,113 @@
+:root{
+    --primary-background: #091A23;
+    --secondary-background: #0D1117;
+    --primary-gold: #FFA500;
+    --highlight-gold: #FFA500;
+    --gold-light: #FFE8A3;
+    --text-white: #F5F2EA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-section{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.main-section .title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-section .title h2{
+    text-align: center;
+    color: var(--text-white);
+}
+
+.main-section .button button{
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    color: var(--highlight-gold);
+    text-align: right;
+}
+
+.image-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-section{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+
+.image-section .banner{
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.image-section .banner img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.5),
+        transparent
+    );
+
+    color: var(--text-white);
+}
+
+.banner-content h3{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.banner-content p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(245, 242, 234, 0.8);
+
+    padding-right: 40px;
+}
+
+.banner-arrow button{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    font-size: 20px;
+    color: var(--highlight-gold);
+
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.banner:hover .banner-arrow button{
+    transform: translateX(5px);
+}

@@ -1,3 +1,15 @@
+:root{
+    --primary-background: #091A23;
+    --secondary-background: #0D1117;
+    --primary-gold: #FFA500;
+    --highlight-gold: #FFA500;
+    --gold-light: #FFE8A3;
+    --text-white: #F5F2EA;
+}
+
+body{
+  background-color: var(--secondary-background);
+}
 .counter {
   font-size: 16px;
   padding: 5px 10px;

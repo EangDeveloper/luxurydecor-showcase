@@ -1,9 +1,11 @@
 :root{
     --primary-background: #091A23;
     --secondary-background: #0D1117;
-    --primary-gold: #AD8C53;
-    --highlight-gold: #C8A86B;
+    --primary-gold: #FFA500;
+    --highlight-gold: #FFA500;
+    --gold-light: #FFE8A3;
     --text-white: #F5F2EA;
+    --button-color: #a78453;
 }
 
 *{
@@ -18,7 +20,8 @@
     height: auto;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px, solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     border-color: var(--primary-gold);
     background: var(--primary-background);
 }
@@ -68,4 +71,61 @@
 .nav li:hover{
     content: " ";
     color: var(--primary-gold);
+}
+
+.banner-img{
+    width: 100%;
+    height: auto;
+}
+
+.image img{
+    width: 100%;
+    height: 720px;
+}
+
+.banner-title{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 55%;
+    padding-left: 150px;
+    
+}
+
+.banner-title .p-title{
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--text-white);
+}
+
+.banner-title h1{
+    color: var(--highlight-gold);
+    font-weight: bold;
+}
+
+.banner-title .p-para{
+    color: var(--text-white);
+}
+
+.banner-title .explore-btn{
+    width: 250px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: var(--button-color);
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+.banner-title .explore-btn:hover{
+    content: ' ';
+    background-color: var(--gold-light);
+    color: var(--secondary-background);
+}
+
+.banner-title .arrow{
+    font-size: 16px;
 }
