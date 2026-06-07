@@ -2,10 +2,13 @@
 import Header from '../layouts/header'
 import Footer from '../layouts/footer'
 import RoofPage from '../layouts/roof'
+import PopularPage from '../layouts/popular'
+import WallPage from '../layouts/wall'
 
 import './styles/frontPageStyle.css'
 import logo from '../../assets/logos/logo.png'
 import banner from '../../assets/images/banner/car1.jpg'
+import bannerVideo from '../../assets/videos/caranim.mp4'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faLayerGroup, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -31,7 +34,13 @@ function frontPage(){
             </div>
             <div className="banner-img">
                 <div className="image">
-                    <img src={banner} alt="" />
+                    <video
+                        src={bannerVideo}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                    />
                 </div>
                 <div className="banner-title">
                     <p className='p-title'>Dream Car Interior</p>
@@ -42,10 +51,19 @@ function frontPage(){
                     </p>
                     <button className='explore-btn'>Explore Collections <FontAwesomeIcon icon={faChevronRight} className='arrow'/></button>
                 </div>
+                <div className="slide-text">
+                    <div className="text-slide">
+                        <span>✦ Welcome to Luxury Decor Cambodia ✦</span>
+                        <span>Dream Car Interiors ✦ Starlight Roof ✦ Premium Customization ✦</span>
+                        <span>Welcome to Luxury Decor Cambodia ✦</span>
+                        <span>Dream Car Interiors ✦ Starlight Roof ✦ Premium Customization ✦</span>
+                    </div>
+                </div>
             </div>
 
             <RoofPage />
-
+            <WallPage />
+            <PopularPage />
 
             <Footer />
         </>

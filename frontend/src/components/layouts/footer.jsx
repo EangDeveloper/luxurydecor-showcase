@@ -52,16 +52,16 @@ export default function footer(){
                         <li>Standard Ceiling</li>
                         <li>Vip Wall</li>
                         <li>Standard Wall</li>
-                        <li>Vip floor</li>
-                        <li>Standard floor</li>
+                        <li>Vip Floor</li>
+                        <li>Standard Floor</li>
                     </ul>
                 </div>
                 <div className="main-customer">
                     <h3>Customer care</h3>
                     <ul>
                         <li>FAQ</li>
-                        <li>warrently</li>
-                        <li>experience guide</li>
+                        <li>Service & Guide</li>
+                        <li>Experience guide</li>
                         <li>Return & Exchanges</li>
                         <li>Warranty</li>
                         <li>Terms & Conditions</li>

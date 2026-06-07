@@ -68,28 +68,31 @@
     cursor: pointer;
 }
 
+.nav li svg{
+    margin-right: 8px;
+}
+
 .nav li:hover{
-    content: " ";
     color: var(--primary-gold);
 }
 
 .banner-img{
+    position: relative;
     width: 100%;
     height: auto;
 }
 
-.image img{
+.image video{
     width: 100%;
-    height: 720px;
+    height: 700px;
+    object-fit: cover;
 }
 
 .banner-title{
     position: absolute;
-    width: auto;
-    height: auto;
-    top: 55%;
-    padding-left: 150px;
-    
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
 }
 
 .banner-title .p-title{
@@ -121,11 +124,46 @@
 }
 
 .banner-title .explore-btn:hover{
-    content: ' ';
     background-color: var(--gold-light);
     color: var(--secondary-background);
 }
 
 .banner-title .arrow{
     font-size: 16px;
+}
+
+.slide-text{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: rgba(9, 26, 35, 0.9);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--primary-gold);
+    border-bottom: 1px solid var(--primary-gold);
+    bottom: 0;
+    left: 0;
+}
+
+.text-slide{
+    display: flex;
+    white-space: nowrap;
+    animation: slideText 20s linear infinite;
+}
+
+.text-slide span{
+    color: var(--text-white);
+    font-size: 22px;
+    font-weight: 600;
+    padding-right: 80px;
+}
+
+@keyframes slideText{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
 }

@@ -1,0 +1,114 @@
+:root{
+    --primary-background: #091A23;
+    --secondary-background: #0D1117;
+    --primary-gold: #FFA500;
+    --highlight-gold: #FFA500;
+    --gold-light: #FFE8A3;
+    --text-white: #F5F2EA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-popular{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.main-popular .popular-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-popular .popular-title h1{
+    text-align: center;
+    color: var(--highlight-gold);
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.popular-image-container{
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--primary-background);
+    border-radius: 15px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.popular-image-section{
+    padding: 25px;
+}
+
+.popular-image-section .popular-banner{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.popular-image-section .popular-banner img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.popular-banner-content{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    flex: 1;
+    padding: 20px;
+    color: var(--text-white);
+}
+
+.popular-banner-content h1{
+    font-size: 40px;
+    color: var(--text-white);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.popular-banner-content p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--gold-light);
+    text-transform: capitalize;
+}
+
+.popular-para{
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--gold-light);
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+
+.popular-banner-arrow{
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.popular-banner-arrow button{
+    font-size: 30px;
+    color: var(--highlight-gold);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.popular-banner-arrow button:hover{
+    transform: translateX(5px);
+}
+
+.popular-banner.reverse{
+    flex-direction: row-reverse;
+}

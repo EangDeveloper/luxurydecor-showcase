@@ -22,6 +22,7 @@
 .main-section .title{
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .main-section .title h2{
@@ -37,6 +38,7 @@
     border: none;
     color: var(--highlight-gold);
     text-align: right;
+    cursor: pointer;
 }
 
 .image-container{
