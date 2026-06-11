@@ -13,3 +13,244 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.detail-menu{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    height: 90px;
+    background: var(--primary-background);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 165, 0, 0.2);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.detail-logo{
+    display: flex;
+    align-items: center;
+}
+
+.detail-logo img{
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.detail-menu::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--highlight-gold),
+        transparent
+    );
+}
+
+.detail-search-bar{
+    width: 400px;
+    height: 50px;
+    margin: 0;
+}
+
+.detail-search-bar input{
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,165,0,0.15);
+    border-radius: 30px;
+    padding: 0 25px;
+    color: var(--text-white);
+    transition: all 0.3s ease;
+}
+
+.detail-search-bar input::placeholder{
+    color: rgba(245,242,234,0.5);
+}
+
+.detail-search-bar input:focus{
+    border-color: var(--highlight-gold);
+    box-shadow: 0 0 20px rgba(255,165,0,0.15);
+}
+
+.detail-nav{
+    width: auto;
+}
+
+.detail-nav .detail-menu-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+}
+
+.detail-nav li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    color: var(--text-white);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.detail-nav li svg{
+    margin-right: 8px;
+}
+
+.detail-nav li::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--highlight-gold);
+    transition: width 0.3s ease;
+}
+
+.detail-nav li:hover{
+    color: var(--highlight-gold);
+}
+
+.detail-nav li:hover::after{
+    width: 100%;
+}
+
+.detail-row-img{
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    gap: 60px;
+}
+
+.detail-col-img{
+    flex: 1;
+}
+
+.detail-col-text{
+    flex: 1;
+}
+
+.main-image{
+    width: 100%;
+    height: 550px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(var(--opacity-gold),0.2);
+}
+
+.main-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail-row{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.thumbnail-row img{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+
+.thumbnail-row img:hover{
+    border-color: var(--highlight-gold);
+    transform: translateY(-3px);
+}
+
+.detail-col-text{
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-category{
+    color: var(--highlight-gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.detail-col-text h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--gold-light);
+    font-family: "Cormorant Garamond", serif;
+}
+
+.detail-col-text p{
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: rgba(245,242,234,.8);
+    margin-bottom: 30px;
+}
+
+.product-features{
+    background: rgba(255,255,255,.03);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(var(--opacity-gold),0.15);
+    margin-bottom: 30px;
+}
+
+.product-features h3{
+    color: var(--highlight-gold);
+    margin-bottom: 15px;
+}
+
+.product-features ul{
+    padding-left: 20px;
+}
+
+.product-features li{
+    margin-bottom: 10px;
+}
+
+.button-group{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.download-btn{
+    width: 220px;
+    height: 55px;
+    border-radius: 30px;
+    border: 1px solid var(--highlight-gold);
+    background: transparent;
+    color: var(--highlight-gold);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.download-btn:hover{
+    background: var(--highlight-gold);
+    color: var(--primary-background);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(var(--opacity-gold),0.3);
+}

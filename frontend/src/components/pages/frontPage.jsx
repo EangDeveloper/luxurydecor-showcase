@@ -18,7 +18,7 @@ function frontPage(){
         <>
             <Header />
             
-            <div className="main-menu">
+            <div className="main-men">
                 <div className="logo">
                     <img src={logo} alt="logo" />
                 </div>
