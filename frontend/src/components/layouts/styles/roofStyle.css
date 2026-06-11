@@ -37,8 +37,21 @@
     background: transparent;
     border: none;
     color: var(--highlight-gold);
-    text-align: right;
     cursor: pointer;
+    justify-content: space-evenly;
+}
+
+.main-section .button .btn-view{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border: 1 solid;
+    border-color: var(--highlight-gold);
+}
+
+.main-section .button .btn-view:hover{
+    color: var(--text-white);
 }
 
 .image-container{

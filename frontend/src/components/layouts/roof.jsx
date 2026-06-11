@@ -13,6 +13,7 @@ export default function roof(){
                     <h2>Discover Our Signature Styles</h2>
                     <div className="button">
                         <button><FontAwesomeIcon icon={faCircleArrowLeft}/></button>
+                        <button className='btn-view'>View All</button>
                         <button><FontAwesomeIcon icon={faCircleArrowRight}/></button>
                     </div>
                 </div>

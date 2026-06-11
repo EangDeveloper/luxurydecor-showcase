@@ -14,7 +14,7 @@ export default function footer(){
     return(
         <section className='footer-section'>
             <footer className='main-footer'>
-                <div className="logo">
+                <div className="footer-logo">
                     <img src={Logo} alt="logo" />
                     <p>Crafting refined interiors and exceptional <br/>spaces with timeless elegance.
                         <br/>Proudly based in Cambodia.

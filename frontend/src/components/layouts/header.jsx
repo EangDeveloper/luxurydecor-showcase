@@ -2,8 +2,8 @@
 import './styles/headerStyle.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
-import { faFacebookF, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { faLocationDot, faPhone, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faTelegram, } from '@fortawesome/free-brands-svg-icons';
 
 export default function Header(){
     return(
@@ -24,6 +24,9 @@ export default function Header(){
                     </div>
                     <div className="telegram">
                         <a href="#"><FontAwesomeIcon icon={faTelegram} className='gold-social'/></a>
+                    </div>
+                    <div className="admin">
+                        <a href="#"><FontAwesomeIcon icon={faUser} className='gold-social'/></a>
                     </div>
                 </div>
             </div>

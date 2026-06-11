@@ -1,0 +1,15 @@
+:root{
+    --primary-background: #091A23;
+    --secondary-background: #0D1117;
+    --primary-gold: #C9A15A;
+    --highlight-gold: #D8B87A;
+    --gold-light: #FFE8A3;
+    --opacity-gold: 200, 168, 107;
+    --text-white: #F5F2EA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
