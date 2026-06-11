@@ -3,7 +3,19 @@ import ProductImage from '../../../assets/images/banner/car1.jpg'
 
 import './styles/productImageList.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+
 export default function productImageList(){
+
+    const handleDownload = (image, title) => {
+        const link = document.createElement('a');
+        link.href = image;
+        link.download = `${title}.jpg`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
     const products = [
         { id: 1, title: "Roof Top", image: ProductImage },
@@ -25,6 +37,13 @@ export default function productImageList(){
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
+                    <button
+                        className="pro-download-btn"
+                        onClick={() => handleDownload(product.image, product.title)}
+                    >
+                        <FontAwesomeIcon icon={faDownload}/>
+                        Download
+                    </button>
                 </div>
             ))}
         </div>

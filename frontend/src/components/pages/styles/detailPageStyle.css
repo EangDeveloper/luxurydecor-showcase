@@ -236,6 +236,13 @@
 }
 
 .download-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.download-btn{
     width: 220px;
     height: 55px;
     border-radius: 30px;

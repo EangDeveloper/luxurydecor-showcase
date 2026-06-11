@@ -52,3 +52,33 @@
     padding: 0 15px 20px;
     line-height: 1.6;
 }
+
+.pro-download-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pro-download-btn{
+    width: calc(100% - 30px);
+    margin: 0 15px 20px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(
+        135deg,
+        var(--primary-gold),
+        var(--highlight-gold)
+    );
+    color: var(--primary-background);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pro-download-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 165, 0, 0.3);
+}
